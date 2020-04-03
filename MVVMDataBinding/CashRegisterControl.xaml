@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:MVVMDataBinding"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="900">
+    <StackPanel Orientation="Vertical">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -29,4 +30,6 @@
 
         </StackPanel>
     </Grid>
+        <TextBlock Text="{Binding Path=TotalValue, StringFormat='C'}" HorizontalAlignment="Center" Margin="5" FontSize="20" />
+    </StackPanel>
 </UserControl>
